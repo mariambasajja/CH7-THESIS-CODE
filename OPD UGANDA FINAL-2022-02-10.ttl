@@ -1,0 +1,333 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vocablary1: <https://github.com/mariambasajja/vocablary1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/mariambasajja/vocablary1/> a skos:ConceptScheme;
+  dct:creator <http://orcid.org/0000-0001-7710-8843>;
+  dct:description "This is the ontology containing controlled terms and properties for the data collected using the Out Patient Register in Uganda."@en;
+  dct:title "This is the ontology containing controlled terms and properties for the data collected using the Out Patient Register in Uganda."@en;
+  pav:createdOn "2021-05-27T00:00:00+01:00"@en;
+  pav:lastUpdatedOn "2022-01-107T14:30:00+01:00"@en;
+  pav:version "0.2"@en;
+  skos:hasTopConcept vocablary1:Disability, vocablary1:Fever, vocablary1:LabTuberculosisResult,
+    vocablary1:LinkedtoTuberculosisClinic, vocablary1:MalariaTestsDone, vocablary1:PatientCategory,
+    vocablary1:PatientSentToTheLab, vocablary1:PresumedTuberculosisCase, vocablary1:Sex,
+    vocablary1:Tickclassification;
+  skos:prefLabel "This is the ontology containing controlled terms and properties for the data collected using the Out Patient Register in Uganda."@en .
+
+<https://github.com/mariambasajja/vocablary1/UgandanNationalIdentificationNumber(NIN)>
+  a owl:ObjectProperty;
+  skos:definition "Ugandan National Identification Number (NIN)"@en;
+  skos:prefLabel "Ugandan National Identification Number (NIN)"@en .
+
+vocablary1:SerialNumber a owl:ObjectProperty;
+  skos:definition "Serial Number"@en;
+  skos:prefLabel "Serial Number"@en .
+
+vocablary1:District a owl:ObjectProperty;
+  skos:definition "District"@en;
+  skos:prefLabel "District"@en .
+
+vocablary1:HSD a owl:ObjectProperty;
+  skos:definition "HSD"@en;
+  skos:prefLabel "HSD"@en .
+
+vocablary1:Code a owl:ObjectProperty;
+  skos:definition "Code"@en;
+  skos:prefLabel "Code"@en .
+
+<https://github.com/mariambasajja/vocablary1/Subcounty/Division> a owl:ObjectProperty;
+  skos:definition "Sub-county/Division"@en;
+  skos:prefLabel "Sub-county/Division"@en .
+
+vocablary1:Residence a owl:ObjectProperty;
+  skos:definition "Residence"@en;
+  skos:prefLabel "Residence"@en .
+
+vocablary1:NextofkinandContact a owl:ObjectProperty;
+  skos:definition "Next of kin and Contact"@en;
+  skos:prefLabel "Next of kin and Contact"@en .
+
+<https://github.com/mariambasajja/vocablary1/BloodPressure(mmHg)> a owl:ObjectProperty;
+  skos:definition "Blood Pressure (mmHg)"@en;
+  skos:prefLabel "Blood Pressure (mmHg)"@en .
+
+<https://github.com/mariambasajja/vocablary1/BloodSugar(mmorl)> a owl:ObjectProperty;
+  skos:definition "Blood Sugar (mm or l)"@en;
+  skos:prefLabel "Blood Sugar(mm or l)"@en .
+
+vocablary1:NeedForPalliativeCare a owl:ObjectProperty;
+  skos:definition "Need For Palliative Care"@en;
+  skos:prefLabel "Need For Palliative Care"@en .
+
+vocablary1:TobaccoUse a owl:ObjectProperty;
+  skos:definition "Tobacco Use"@en;
+  skos:prefLabel "Tobacco Use"@en .
+
+vocablary1:TobaccoExposure a owl:ObjectProperty;
+  skos:definition "Tobacco Exposure"@en;
+  skos:prefLabel "Tobacco Exposure"@en .
+
+vocablary1:AlcoholUse a owl:ObjectProperty;
+  skos:definition "Alcohol Use"@en;
+  skos:prefLabel "Alcohol Use"@en .
+
+vocablary1:Prescription a owl:ObjectProperty;
+  skos:definition "Prescription"@en;
+  skos:prefLabel "Prescription"@en .
+
+vocablary1:ReferralInNumber a owl:ObjectProperty;
+  skos:definition "Referral In Number"@en;
+  skos:prefLabel "Referral In Number"@en .
+
+vocablary1:ReferraloutNumber a owl:ObjectProperty;
+  skos:definition "Referral out Number"@en;
+  skos:prefLabel "Referral out Number"@en .
+
+vocablary1:Fever a skos:Concept;
+  skos:definition "Fever"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:narrower vocablary1:No, vocablary1:Yes;
+  skos:prefLabel "Fever"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/vocablary1/> .
+
+vocablary1:Yes a skos:Concept;
+  skos:broader vocablary1:Fever, vocablary1:LinkedtoTuberculosisClinic, vocablary1:PatientSentToTheLab,
+    vocablary1:PresumedTuberculosisCase;
+  skos:definition "Yes"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Yes"@en .
+
+vocablary1:No a skos:Concept;
+  skos:broader vocablary1:Fever, vocablary1:LinkedtoTuberculosisClinic, vocablary1:PatientSentToTheLab,
+    vocablary1:PresumedTuberculosisCase;
+  skos:definition "No"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "No"@en .
+
+vocablary1:MalariaTestsDone a skos:Concept;
+  skos:definition "Malaria Tests Done"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:narrower <https://github.com/mariambasajja/vocablary1/B/S>, vocablary1:ND, vocablary1:RDT;
+  skos:prefLabel "Malaria Tests Done"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/vocablary1/> .
+
+<https://github.com/mariambasajja/vocablary1/B/S> a skos:Concept;
+  skos:broader vocablary1:MalariaTestsDone;
+  skos:definition "microscopy"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "B/S"@en .
+
+vocablary1:RDT a skos:Concept;
+  skos:broader vocablary1:MalariaTestsDone;
+  skos:definition "Rapid Diagnostic Test"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "RDT"@en .
+
+vocablary1:ND a skos:Concept;
+  skos:broader vocablary1:MalariaTestsDone;
+  skos:definition "Not Done"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "ND"@en .
+
+vocablary1:PresumedTuberculosisCase a skos:Concept;
+  skos:definition "Presumed Tuberculosis Case"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:narrower vocablary1:No, vocablary1:Yes;
+  skos:prefLabel "Presumed Tuberculosis Case"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/vocablary1/> .
+
+vocablary1:PatientSentToTheLab a skos:Concept;
+  skos:definition "Patient Sent To The Lab"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:narrower vocablary1:No, vocablary1:Yes;
+  skos:prefLabel "Patient Sent To The Lab"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/vocablary1/> .
+
+vocablary1:LabTuberculosisResult a skos:Concept;
+  skos:definition "Lab Tuberculosis Result"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:narrower vocablary1:Neg, vocablary1:Notapplicable, vocablary1:Pos;
+  skos:prefLabel "Lab Tuberculosis Result"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/vocablary1/> .
+
+vocablary1:Pos a skos:Concept;
+  skos:broader vocablary1:LabTuberculosisResult;
+  skos:definition "Positive"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Pos"@en .
+
+vocablary1:Neg a skos:Concept;
+  skos:broader vocablary1:LabTuberculosisResult;
+  skos:definition "Negative"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Neg"@en .
+
+vocablary1:Notapplicable a skos:Concept;
+  skos:broader vocablary1:LabTuberculosisResult;
+  skos:definition "Not Applicable"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Not applicable"@en .
+
+vocablary1:LinkedtoTuberculosisClinic a skos:Concept;
+  skos:definition "Linked to Tuberculosis Clinic"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:narrower vocablary1:No, vocablary1:Yes;
+  skos:prefLabel "Linked to Tuberculosis Clinic"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/vocablary1/> .
+
+vocablary1:Disability a skos:Concept;
+  skos:definition "Disability"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:narrower vocablary1:Albinism, <https://github.com/mariambasajja/vocablary1/Delayedagespecificmotordevelopment(turning,sittingcrawlingstandingandwalkingasindicatedonthechildhealthcard)>,
+    vocablary1:DifficultyinSeeing, vocablary1:Difficultyinhearing, vocablary1:Difficultyinreading,
+    vocablary1:Difficultyinunderstanding, vocablary1:Difficultyinwalking, vocablary1:Difficultyinwriting,
+    vocablary1:Difficultywashingalloverordressing, vocablary1:Emotionallyimpaired, vocablary1:Mentallyimpaired;
+  skos:prefLabel "Disability"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/vocablary1/> .
+
+vocablary1:DifficultyinSeeing a skos:Concept;
+  skos:broader vocablary1:Disability;
+  skos:definition "Difficulty in Seeing"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Difficulty in Seeing"@en .
+
+vocablary1:Albinism a skos:Concept;
+  skos:broader vocablary1:Disability;
+  skos:definition "Albinism"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Albinism"@en .
+
+vocablary1:Difficultyinhearing a skos:Concept;
+  skos:broader vocablary1:Disability;
+  skos:definition "Difficulty in hearing"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Difficulty in hearing"@en .
+
+<https://github.com/mariambasajja/vocablary1/Delayedagespecificmotordevelopment(turning,sittingcrawlingstandingandwalkingasindicatedonthechildhealthcard)>
+  a skos:Concept;
+  skos:broader vocablary1:Disability;
+  skos:definition "Delayed age specific motor development(turning,sitting, crawling, standing and walking as indicated on the child health card)"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Delayed age specific motor development(turning,sitting crawling standing and walking as indicated on the child health card)"@en .
+
+vocablary1:Difficultyinwalking a skos:Concept;
+  skos:broader vocablary1:Disability;
+  skos:definition "Difficulty in walking"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Difficulty in walking"@en .
+
+vocablary1:Difficultyinunderstanding a skos:Concept;
+  skos:broader vocablary1:Disability;
+  skos:definition "Difficulty in understanding"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Difficulty in understanding"@en .
+
+vocablary1:Difficultyinreading a skos:Concept;
+  skos:broader vocablary1:Disability;
+  skos:definition "Difficulty in reading"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Difficulty in reading"@en .
+
+vocablary1:Difficultyinwriting a skos:Concept;
+  skos:broader vocablary1:Disability;
+  skos:definition "Difficulty in writing"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Difficulty in writing"@en .
+
+vocablary1:Difficultywashingalloverordressing a skos:Concept;
+  skos:broader vocablary1:Disability;
+  skos:definition "Difficulty washing all over or dressing"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Difficulty washing all over or dressing"@en .
+
+vocablary1:Mentallyimpaired a skos:Concept;
+  skos:broader vocablary1:Disability;
+  skos:definition "Mentally impaired"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Mentally impaired"@en .
+
+vocablary1:Emotionallyimpaired a skos:Concept;
+  skos:broader vocablary1:Disability;
+  skos:definition "Emotionally impaired"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Emotionally impaired"@en .
+
+vocablary1:Sex a skos:Concept;
+  skos:definition "Sex"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:narrower vocablary1:Female, vocablary1:Male;
+  skos:prefLabel "Sex"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/vocablary1/> .
+
+vocablary1:Female a skos:Concept;
+  skos:broader vocablary1:Sex;
+  skos:definition "Female"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Female"@en .
+
+vocablary1:Male a skos:Concept;
+  skos:broader vocablary1:Sex;
+  skos:definition "Male"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Male"@en .
+
+vocablary1:PatientCategory a skos:Concept;
+  skos:definition "Patient Category"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:narrower vocablary1:Foreigner, vocablary1:National, vocablary1:Refugee;
+  skos:prefLabel "Patient Category"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/vocablary1/> .
+
+vocablary1:National a skos:Concept;
+  skos:broader vocablary1:PatientCategory;
+  skos:definition "National"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "National"@en .
+
+vocablary1:Refugee a skos:Concept;
+  skos:broader vocablary1:PatientCategory;
+  skos:definition "Refugee"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Refugee"@en .
+
+vocablary1:Foreigner a skos:Concept;
+  skos:broader vocablary1:PatientCategory;
+  skos:definition "Foreigner"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Foreigner"@en .
+
+vocablary1:Tickclassification a skos:Concept;
+  skos:definition "Tick Classification"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:narrower vocablary1:NewAttendance, vocablary1:ReAttendance;
+  skos:prefLabel "Tick classification"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/vocablary1/> .
+
+vocablary1:NewAttendance a skos:Concept;
+  skos:broader vocablary1:Tickclassification;
+  skos:definition "New Attendance"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "New Attendance"@en .
+
+vocablary1:ReAttendance a skos:Concept;
+  skos:broader vocablary1:Tickclassification;
+  skos:definition "Re Attendance"@en;
+  skos:inScheme <https://github.com/mariambasajja/vocablary1/>;
+  skos:prefLabel "Re Attendance"@en .

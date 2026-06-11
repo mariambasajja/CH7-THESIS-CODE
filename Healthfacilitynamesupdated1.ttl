@@ -1,0 +1,534 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vmfl: <http://vocab.vodana.org/vmfl/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://vocab.vodana.org/vmfl> a skos:ConceptScheme;
+  dct:contributor <https://orcid.org/0000-0003-4942-2725>;
+  dct:contributor1 <https://orcid.org/0000-0001-7710-8843>;
+  dct:creator <https://orcid.org/0000-0002-7616-0962>;
+  dct:description "VODANA Health Facility Codes and Names that are used within FAIR Implementation Project in Africa"@en;
+  dct:title "VODANA Ontologies containing Health Facility Codes and Names"@en;
+  pav:createdOn "2021-07-29T00:00:00+01:00"@en;
+  pav:lastUpdatedOn "2021-09-20T00:00:00+01:01"@en;
+  pav:version "2.1.0"@en;
+  skos:hasTopConcept vmfl:Ethiophia, vmfl:Kenya, vmfl:Liberia, vmfl:Nigeria, vmfl:Somalia,
+    vmfl:Tanzania, vmfl:Uganda, vmfl:Zimbabwe;
+  skos:prefLabel "VODANA Health Facility Codes and Names that are used within FAIR Implementation Project in Africa"@en .
+
+vmfl:Liberia a skos:Concept;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:narrower vmfl:VDLR0001;
+  skos:prefLabel "Liberia"@en;
+  skos:topConceptOf <http://vocab.vodana.org/vmfl> .
+
+vmfl:VDLR0001 a skos:Concept;
+  skos:broader vmfl:Liberia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "JFK Hospital"@en .
+
+vmfl:Tanzania a skos:Concept;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:narrower vmfl:VDTZ0002;
+  skos:prefLabel "Tanzania"@en;
+  skos:topConceptOf <http://vocab.vodana.org/vmfl> .
+
+vmfl:VDTZ0002 a skos:Concept;
+  skos:broader vmfl:Tanzania;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Kilimanjaro Christian Medical Center"@en .
+
+vmfl:Kenya a skos:Concept;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:narrower vmfl:VDKE0003, vmfl:VDKE0004, vmfl:VDKE0005, vmfl:VDKE0006;
+  skos:prefLabel "Kenya"@en;
+  skos:topConceptOf <http://vocab.vodana.org/vmfl> .
+
+vmfl:VDKE0003 a skos:Concept;
+  skos:broader vmfl:Kenya;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Zambezi Hospital"@en .
+
+vmfl:VDKE0004 a skos:Concept;
+  skos:broader vmfl:Kenya;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Beacon of Hope Hospital"@en .
+
+vmfl:VDKE0005 a skos:Concept;
+  skos:broader vmfl:Kenya;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Pumwani Hospital"@en .
+
+vmfl:VDKE0006 a skos:Concept;
+  skos:broader vmfl:Kenya;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Kenya Medical Research Institute"@en .
+
+vmfl:Uganda a skos:Concept;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:narrower vmfl:VDUG0007, vmfl:VDUG0008, vmfl:VDUG0009, vmfl:VDUG0010, vmfl:VDUG0011,
+    vmfl:VDUG0012, vmfl:VDUG0013, vmfl:VDUG0014, vmfl:VDUG0015;
+  skos:prefLabel "Uganda"@en;
+  skos:topConceptOf <http://vocab.vodana.org/vmfl> .
+
+vmfl:VDUG0007 a skos:Concept;
+  skos:broader vmfl:Uganda;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Lyantode Hospital"@en .
+
+vmfl:VDUG0008 a skos:Concept;
+  skos:broader vmfl:Uganda;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Case Clinic Hospital"@en .
+
+vmfl:VDUG0009 a skos:Concept;
+  skos:broader vmfl:Uganda;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "KIU teaching Hospital"@en .
+
+vmfl:VDUG0010 a skos:Concept;
+  skos:broader vmfl:Uganda;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Holy Innocents Children Hospital"@en .
+
+vmfl:VDUG0011 a skos:Concept;
+  skos:broader vmfl:Uganda;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Hoima Referral Hospital"@en .
+
+vmfl:VDUG0012 a skos:Concept;
+  skos:broader vmfl:Uganda;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Ark Specialist Hospital"@en .
+
+vmfl:VDUG0013 a skos:Concept;
+  skos:broader vmfl:Uganda;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Mubende Regional Referral Hospital"@en .
+
+vmfl:VDUG0014 a skos:Concept;
+  skos:broader vmfl:Uganda;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Kiryandongo Hospital"@en .
+
+vmfl:VDUG0015 a skos:Concept;
+  skos:broader vmfl:Uganda;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Lira Referral Hospital"@en .
+
+vmfl:Ethiophia a skos:Concept;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:narrower vmfl:VDET0011, vmfl:VDET0012, vmfl:VDET0013, vmfl:VDET0014, vmfl:VDET0015,
+    vmfl:VDET0016, vmfl:VDET0017, vmfl:VDET0018, vmfl:VDET0019, vmfl:VDET0020, vmfl:VDET0021,
+    vmfl:VDET0022, vmfl:VDET0023, vmfl:VDET0024, vmfl:VDET0025, vmfl:VDET0026, vmfl:VDET0027,
+    vmfl:VDET0028, vmfl:VDET0029, vmfl:VDET0030, vmfl:VDET0031, vmfl:VDET0032, vmfl:VDET0033,
+    vmfl:VDET0034, vmfl:VDET0035, vmfl:VDET0036, vmfl:VDET0037, vmfl:VDET0038, vmfl:VDET0039,
+    vmfl:VDET0040;
+  skos:prefLabel "Ethiophia"@en;
+  skos:topConceptOf <http://vocab.vodana.org/vmfl> .
+
+vmfl:VDET0011 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Gelan Health Center"@en .
+
+vmfl:VDET0012 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Tuludimtu Health Center"@en .
+
+vmfl:VDET0013 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Akaki Kela Health Center"@en .
+
+vmfl:VDET0014 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Tirunesh Beijing General Hospital"@en .
+
+vmfl:VDET0015 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Teklehaymanot Health Center"@en .
+
+vmfl:VDET0016 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Lideta Health Center"@en .
+
+vmfl:VDET0017 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Beletishachew Health Center"@en .
+
+vmfl:VDET0018 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Dagim Hidase Health Center"@en .
+
+vmfl:VDET0019 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Abinet Health Center"@en .
+
+vmfl:VDET0020 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Hidasie Fire Health Center"@en .
+
+vmfl:VDET0021 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Tikur Anbesa Specialized Hospital"@en .
+
+vmfl:VDET0022 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Ferensay Health Center"@en .
+
+vmfl:VDET0023 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Entoto 2 Health Center"@en .
+
+vmfl:VDET0024 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Entoto 1 Health Center"@en .
+
+vmfl:VDET0025 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Korea Meterian Memorial Health Center"@en .
+
+vmfl:VDET0026 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Yeka Health Center"@en .
+
+vmfl:VDET0027 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Abuare Health Center"@en .
+
+vmfl:VDET0028 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Woreda 7 Health Center"@en .
+
+vmfl:VDET0029 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Chefe Health Center"@en .
+
+vmfl:VDET0030 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Woreda 12 Health Center"@en .
+
+vmfl:VDET0031 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Adigrat General Hospital"@en .
+
+vmfl:VDET0032 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Wukro General Hospital"@en .
+
+vmfl:VDET0033 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Ayder Referral Hospital"@en .
+
+vmfl:VDET0034 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Mekelle General Hospital"@en .
+
+vmfl:VDET0035 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Quiha General Hospital"@en .
+
+vmfl:VDET0036 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Lekatit 11 Primary Hospital"@en .
+
+vmfl:VDET0037 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Adigudom Primary Hospital"@en .
+
+vmfl:VDET0038 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Adishihu Primary Hospital"@en .
+
+vmfl:VDET0039 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Lemlem Carl General Hospital"@en .
+
+vmfl:VDET0040 a skos:Concept;
+  skos:broader vmfl:Ethiophia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Mekoni Primary hospital"@en .
+
+vmfl:Somalia a skos:Concept;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:narrower vmfl:VDSOM0041, vmfl:VDSOM0042, vmfl:VDSOM0043, vmfl:VDSOM0044, vmfl:VDSOM0045,
+    vmfl:VDSOM0046, vmfl:VDSOM0047, vmfl:VDSOM0048, vmfl:VDSOM0049, vmfl:VDSOM0050, vmfl:VDSOM0051,
+    vmfl:VDSOM0052, vmfl:VDSOM0053, vmfl:VDSOM0054, vmfl:VDSOM0055, vmfl:VDSOM0056, vmfl:VDSOM0057,
+    vmfl:VDSOM0058, vmfl:VDSOM0059;
+  skos:prefLabel "Somalia"@en;
+  skos:topConceptOf <http://vocab.vodana.org/vmfl> .
+
+vmfl:VDSOM0041 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Waiye Referal Health Center"@en .
+
+vmfl:VDSOM0042 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Rako Referral Health Center"@en .
+
+vmfl:VDSOM0043 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Bander Bayla Referral Center"@en .
+
+vmfl:VDSOM0044 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Gacan-Libah Health Center"@en .
+
+vmfl:VDSOM0045 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Hingood Health Center"@en .
+
+vmfl:VDSOM0046 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Shabelle Health Center"@en .
+
+vmfl:VDSOM0047 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Shimbarrale Health Center"@en .
+
+vmfl:VDSOM0048 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Sherbi Health Center"@en .
+
+vmfl:VDSOM0049 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Hafun District Hospital / Referral Health Center"@en .
+
+vmfl:VDSOM0050 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Kambo Health Center"@en .
+
+vmfl:VDSOM0051 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Hidda Health Center"@en .
+
+vmfl:VDSOM0052 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Yaka Health Center"@en .
+
+vmfl:VDSOM0053 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Gutule Private Hospital"@en .
+
+vmfl:VDSOM0054 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Gargar Clinic and Diagnostic Center"@en .
+
+vmfl:VDSOM0055 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Balsam Clinic and Diagnostic Center"@en .
+
+vmfl:VDSOM0056 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Ugbad Clinic Center"@en .
+
+vmfl:VDSOM0057 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Gardo General Hospital"@en .
+
+vmfl:VDSOM0058 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Ildab Hospital"@en .
+
+vmfl:VDSOM0059 a skos:Concept;
+  skos:broader vmfl:Somalia;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Bayle Medical and Diagnostic"@en .
+
+vmfl:Nigeria a skos:Concept;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:narrower vmfl:VDNG0060, vmfl:VDNG0061, vmfl:VDNG0062, vmfl:VDNG0063, vmfl:VDNG0064,
+    vmfl:VDNG0065, vmfl:VDNG0066, vmfl:VDNG0067, vmfl:VDNG0068, vmfl:VDNG0069, vmfl:VDNG0070,
+    vmfl:VDNG0071, vmfl:VDNG0072, vmfl:VDNG0073, vmfl:VDNG0074, vmfl:VDNG0075, vmfl:VDNG0076,
+    vmfl:VDNG0077, vmfl:VDNG0078, vmfl:VDNG0079, vmfl:VDNG0080;
+  skos:prefLabel "Nigeria"@en;
+  skos:topConceptOf <http://vocab.vodana.org/vmfl> .
+
+vmfl:VDNG0060 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Federal University Lokoja University Medical Centre. Campus 1"@en .
+
+vmfl:VDNG0061 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Federal University Lokoja University Medical Centre"@en .
+
+vmfl:VDNG0062 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Ibrahim Badamasi Babangida University, Lapai School Clinic Lapai"@en .
+
+vmfl:VDNG0063 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Ibrahim Badamasi Babangida Specialist Hospital Minna. Niger State"@en .
+
+vmfl:VDNG0064 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "General Hospital Minna, Niger State"@en .
+
+vmfl:VDNG0065 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Federal Medical Centre, Bida. Niger State"@en .
+
+vmfl:VDNG0066 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Olabisi Onabanjo University health center, Main Campus"@en .
+
+vmfl:VDNG0067 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Olabisi Onabanjo University health center, Mini Campus"@en .
+
+vmfl:VDNG0068 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Umaru Sanda General Hospital, Bida"@en .
+
+vmfl:VDNG0069 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Talba Housing Estate Primary Health Care, Minna"@en .
+
+vmfl:VDNG0070 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "MI Wushishi Primary Health Care, Minna"@en .
+
+vmfl:VDNG0071 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Hamdala Speacialist Hospital, Minna"@en .
+
+vmfl:VDNG0072 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Lapai General Hospital, Lapai"@en .
+
+vmfl:VDNG0073 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Senator Idris Ibrahim Kuta Primary Health Care, Minna. Niger State"@en .
+
+vmfl:VDNG0074 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Tunga Primary Health Care, Peter Sarki Road, Minna"@en .
+
+vmfl:VDNG0075 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Archmedics, Minna"@en .
+
+vmfl:VDNG0076 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Bosso lowcost Primary Health care Minna"@en .
+
+vmfl:VDNG0077 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Tunga-Primary Health Care"@en .
+
+vmfl:VDNG0078 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Paiko General Hospital, Paiko"@en .
+
+vmfl:VDNG0079 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "MCH Clinic Goverment House, Minna"@en .
+
+vmfl:VDNG0080 a skos:Concept;
+  skos:broader vmfl:Nigeria;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Katcha Primary Health Facility, Katcha"@en .
+
+vmfl:Zimbabwe a skos:Concept;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:narrower vmfl:VDZW0081, vmfl:VDZW0082, vmfl:VDZW0083;
+  skos:prefLabel "Zimbabwe"@en;
+  skos:topConceptOf <http://vocab.vodana.org/vmfl> .
+
+vmfl:VDZW0081 a skos:Concept;
+  skos:broader vmfl:Zimbabwe;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Great Zimbabwe University Clinics, Off Old Great Zimbabwe road, Masvingo"@en .
+
+vmfl:VDZW0082 a skos:Concept;
+  skos:broader vmfl:Zimbabwe;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Masvingo Provincial Hospital, Carry Street, Masvingo"@en .
+
+vmfl:VDZW0083 a skos:Concept;
+  skos:broader vmfl:Zimbabwe;
+  skos:inScheme <http://vocab.vodana.org/vmfl>;
+  skos:prefLabel "Silveira Hospital, Bikita District, Masvingo"@en .

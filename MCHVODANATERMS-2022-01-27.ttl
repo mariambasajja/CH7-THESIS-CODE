@@ -1,0 +1,243 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mchvodanaterms: <https://github.com/mariambasajja/mchvodanaterms> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/mariambasajja/mchvodanaterms> a skos:ConceptScheme;
+  dct:creator <https://orcid.org/0000-0001-7710-8843>;
+  dct:description "Ontology containing the controlled terms and semantic properties used in the COVID-19 generic template used within different facilities in VODANA"@en;
+  dct:title "This is the ontology containing controlled terms and properties of the maternal child health generic template used within the different facilities"@en;
+  pav:createdOn "2022-01-14T22:00:00+01:00"@en;
+  pav:lastUpdatedOn "2022-016-14T16:32:00-08:00"@en;
+  pav:version "0.0.1"@en;
+  skos:hasTopConcept <https://github.com/mariambasajja/mchvodanatermsConditionoffather>,
+    <https://github.com/mariambasajja/mchvodanatermsConditionofmotheratadmission>, <https://github.com/mariambasajja/mchvodanatermsConditionofmotheratdischarge>,
+    <https://github.com/mariambasajja/mchvodanatermsConditionofmotheronadmission>, <https://github.com/mariambasajja/mchvodanatermsGenderofbaby>,
+    <https://github.com/mariambasajja/mchvodanatermsLevelofeducationofMother>, <https://github.com/mariambasajja/mchvodanatermsLivebirth>,
+    <https://github.com/mariambasajja/mchvodanatermsMaritalstatus>, <https://github.com/mariambasajja/mchvodanatermsModeofdelivery>,
+    <https://github.com/mariambasajja/mchvodanatermsMortalitystatus>;
+  skos:prefLabel "This is the ontology containing controlled terms and properties of the maternal child health generic template used within the different facilities"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsReasonforadmission> a owl:ObjectProperty;
+  rdfs:label "Reason for admission"@en;
+  skos:definition "This is the reason for admitting a patient"@en;
+  skos:prefLabel "Reason for admission"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsExpecteddateofdelivery> a owl:ObjectProperty;
+  rdfs:label "Expected date of delivery"@en;
+  skos:definition "This is the expected date of delivery"@en;
+  skos:prefLabel "Expected date of delivery"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsDeliveredby> a owl:ObjectProperty;
+  rdfs:label "Delivered by"@en;
+  skos:definition "This is the age of the patient"@en;
+  skos:prefLabel "Delivered by"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsDateofdischarge> a owl:ObjectProperty;
+  rdfs:label "Date of discharge"@en;
+  skos:definition "This is the date the mother was discharged"@en;
+  skos:prefLabel "Date of discharge"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsMothername> a owl:ObjectProperty;
+  rdfs:label "Mother name"@en;
+  skos:definition "This is the name of the mother"@en;
+  skos:prefLabel "Mother name"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsFathername> a owl:ObjectProperty;
+  rdfs:label "Father name"@en;
+  skos:definition "This is the name of the father"@en;
+  skos:prefLabel "Father name"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsWeightofbaby> a owl:ObjectProperty;
+  rdfs:label "Weight of baby"@en;
+  skos:definition "This is the weight of the baby"@en;
+  skos:prefLabel "Weight of baby"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsNextofkinname> a owl:ObjectProperty;
+  rdfs:label "Next of kin name"@en;
+  skos:definition "This is the next kin name"@en;
+  skos:prefLabel "Next of kin name"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsNextofkinnumber> a owl:ObjectProperty;
+  rdfs:label "Next of kin number"@en;
+  skos:definition "This is the next of kin"@en;
+  skos:prefLabel "Next of kin number"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsMaritalstatus> a skos:Concept;
+  skos:definition "This is the marital status of the mother"@en;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:narrower <https://github.com/mariambasajja/mchvodanatermsDivorced>, <https://github.com/mariambasajja/mchvodanatermsMarried>,
+    <https://github.com/mariambasajja/mchvodanatermsSingle>, <https://github.com/mariambasajja/mchvodanatermsWidow>;
+  skos:prefLabel "Marital status"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/mchvodanaterms> .
+
+<https://github.com/mariambasajja/mchvodanatermsSingle> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsMaritalstatus>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "Single"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsMarried> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsMaritalstatus>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "Married"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsDivorced> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsMaritalstatus>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "Divorced"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsWidow> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsMaritalstatus>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "Widow"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsConditionofmotheronadmission> a skos:Concept;
+  skos:definition "This is the condion of mother on admission"@en;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:narrower <https://github.com/mariambasajja/mchvodanatermsAlive>, <https://github.com/mariambasajja/mchvodanatermsDeceased>,
+    <https://github.com/mariambasajja/mchvodanatermsNone>;
+  skos:prefLabel "Condition of mother on admission"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/mchvodanaterms> .
+
+<https://github.com/mariambasajja/mchvodanatermsDeceased> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsConditionoffather>, <https://github.com/mariambasajja/mchvodanatermsConditionofmotheratadmission>,
+    <https://github.com/mariambasajja/mchvodanatermsConditionofmotheratdischarge>, <https://github.com/mariambasajja/mchvodanatermsConditionofmotheronadmission>,
+    <https://github.com/mariambasajja/mchvodanatermsMortalitystatus>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "Deceased"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsAlive> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsConditionoffather>, <https://github.com/mariambasajja/mchvodanatermsConditionofmotheratadmission>,
+    <https://github.com/mariambasajja/mchvodanatermsConditionofmotheratdischarge>, <https://github.com/mariambasajja/mchvodanatermsConditionofmotheronadmission>,
+    <https://github.com/mariambasajja/mchvodanatermsMortalitystatus>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "Alive"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsNone> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsConditionoffather>, <https://github.com/mariambasajja/mchvodanatermsConditionofmotheratadmission>,
+    <https://github.com/mariambasajja/mchvodanatermsConditionofmotheratdischarge>, <https://github.com/mariambasajja/mchvodanatermsConditionofmotheronadmission>,
+    <https://github.com/mariambasajja/mchvodanatermsLevelofeducationofMother>, <https://github.com/mariambasajja/mchvodanatermsLivebirth>,
+    <https://github.com/mariambasajja/mchvodanatermsModeofdelivery>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "None"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsConditionoffather> a skos:Concept;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:narrower <https://github.com/mariambasajja/mchvodanatermsAlive>, <https://github.com/mariambasajja/mchvodanatermsDeceased>,
+    <https://github.com/mariambasajja/mchvodanatermsNone>;
+  skos:prefLabel "Condition of father"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/mchvodanaterms> .
+
+<https://github.com/mariambasajja/mchvodanatermsModeofdelivery> a skos:Concept;
+  skos:definition "This is the method through which the mother delivered the child"@en;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:narrower <https://github.com/mariambasajja/mchvodanatermsCaesareansection>, <https://github.com/mariambasajja/mchvodanatermsNone>,
+    <https://github.com/mariambasajja/mchvodanatermsVaginaldelivery>;
+  skos:prefLabel "Mode of delivery"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/mchvodanaterms> .
+
+<https://github.com/mariambasajja/mchvodanatermsCaesareansection> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsModeofdelivery>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "Caesarean section"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsVaginaldelivery> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsModeofdelivery>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "Vaginal delivery"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsLivebirth> a skos:Concept;
+  skos:definition "This requires one to indicate whether the delivery was a live birth"@en;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:narrower <https://github.com/mariambasajja/mchvodanatermsNo>, <https://github.com/mariambasajja/mchvodanatermsNone>,
+    <https://github.com/mariambasajja/mchvodanatermsYes>;
+  skos:prefLabel "Live birth"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/mchvodanaterms> .
+
+<https://github.com/mariambasajja/mchvodanatermsYes> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsLivebirth>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "Yes"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsNo> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsLivebirth>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "No"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsGenderofbaby> a skos:Concept;
+  skos:definition "This is the gender of the baby"@en;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:narrower <https://github.com/mariambasajja/mchvodanatermsFemale>, <https://github.com/mariambasajja/mchvodanatermsMale>;
+  skos:prefLabel "Gender of baby"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/mchvodanaterms> .
+
+<https://github.com/mariambasajja/mchvodanatermsMale> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsGenderofbaby>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "Male"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsFemale> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsGenderofbaby>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "Female"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsMortalitystatus> a skos:Concept;
+  skos:definition "This indicates whether the patient is dead or alive"@en;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:narrower <https://github.com/mariambasajja/mchvodanatermsAlive>, <https://github.com/mariambasajja/mchvodanatermsDeceased>;
+  skos:prefLabel "Mortality status"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/mchvodanaterms> .
+
+<https://github.com/mariambasajja/mchvodanatermsLevelofeducationofMother> a skos:Concept;
+  skos:definition "This is the level of education of the mother of the child"@en;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:narrower <https://github.com/mariambasajja/mchvodanatermsNone>, <https://github.com/mariambasajja/mchvodanatermsPrimarylevel>,
+    <https://github.com/mariambasajja/mchvodanatermsSecondarylevel>, <https://github.com/mariambasajja/mchvodanatermsUniversitylevel>;
+  skos:prefLabel "Level of education of Mother"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/mchvodanaterms> .
+
+<https://github.com/mariambasajja/mchvodanatermsPrimarylevel> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsLevelofeducationofMother>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "Primary level"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsSecondarylevel> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsLevelofeducationofMother>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "Secondary level"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsUniversitylevel> a skos:Concept;
+  skos:broader <https://github.com/mariambasajja/mchvodanatermsLevelofeducationofMother>;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:prefLabel "University level"@en .
+
+<https://github.com/mariambasajja/mchvodanatermsConditionofmotheratadmission> a skos:Concept;
+  skos:definition "This is the condition of the mother at admission"@en;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:narrower <https://github.com/mariambasajja/mchvodanatermsAlive>, <https://github.com/mariambasajja/mchvodanatermsDeceased>,
+    <https://github.com/mariambasajja/mchvodanatermsNone>;
+  skos:prefLabel "Condition of mother at admission"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/mchvodanaterms> .
+
+<https://github.com/mariambasajja/mchvodanatermsConditionofmotheratdischarge> a skos:Concept;
+  skos:definition "This is the condition of the mother at discharge"@en;
+  skos:inScheme <https://github.com/mariambasajja/mchvodanaterms>;
+  skos:narrower <https://github.com/mariambasajja/mchvodanatermsAlive>, <https://github.com/mariambasajja/mchvodanatermsDeceased>,
+    <https://github.com/mariambasajja/mchvodanatermsNone>;
+  skos:prefLabel "Condition of mother at discharge"@en;
+  skos:topConceptOf <https://github.com/mariambasajja/mchvodanaterms> .

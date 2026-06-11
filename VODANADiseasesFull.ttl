@@ -1,0 +1,2743 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vdiseases: <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> a skos:ConceptScheme;
+  dct:contributor <http://orcid.org/0000-0002-9381-9693>;
+  dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  dct:description "Ontology containing the controlled terms and semantic properties used witin the medical templates of VODANA FAIR Implementation countries";
+  dct:title "Vodana disease terms for FAIR implementation countries in Africa";
+  pav:createdOn "2021-09-27T00:00:00+01:00";
+  pav:modifiedOn "2021-10-05T14:30:00+01:00";
+  pav:version "0.3.4";
+  skos:hasTopConcept vdiseases:CongenitalMalformations, vdiseases:DigestiveSystemorOralDiseases,
+    vdiseases:EarNoseandThroatConditions, vdiseases:EndocrineandMetabolicDisorders, vdiseases:Eyeconditions,
+    vdiseases:GenitourinarySystem, vdiseases:InfectiousandParasiticorCommunicableDiseases,
+    vdiseases:Injuries, vdiseases:Maternalconditions, vdiseases:Musculoskeletal, vdiseases:NeonatalDiseases,
+    vdiseases:Neoplasms, vdiseases:NeurologicalDisorders, vdiseases:NonCommunicableDiseases,
+    vdiseases:RespiratorySystem, vdiseases:SkinandSubcutaneous, vdiseases:SpeechandLanguageTherapy;
+  skos:prefLabel "Vodana disease terms for FAIR implementation countries in Africa" .
+
+vdiseases:Maternalconditions a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:JA41.Z, vdiseases:JA82, vdiseases:JA82.1, vdiseases:JA82.2,
+    vdiseases:JA82.3, vdiseases:JA82.6, vdiseases:JA82.Z, vdiseases:JA83, vdiseases:JA83.5,
+    vdiseases:JA83.6, vdiseases:JA83.Z, vdiseases:JA84.3, vdiseases:JA86, vdiseases:JA86.0,
+    vdiseases:JA86.2, vdiseases:JA86.3, vdiseases:JA86.4, vdiseases:JA86.6, vdiseases:JA87,
+    vdiseases:JA88.0, vdiseases:JA88.Y, vdiseases:JA89.3, vdiseases:JA8A, vdiseases:JA8A.2,
+    vdiseases:JA8B.0, vdiseases:JA8B.1, vdiseases:JA8C, vdiseases:JA8D, vdiseases:JA8D.0,
+    vdiseases:JA8D.Z, vdiseases:JA8E, vdiseases:JB00, vdiseases:JB00.0, vdiseases:JB00.1,
+    vdiseases:JB00.2, vdiseases:JB01, vdiseases:JB01.0, vdiseases:JB02, vdiseases:JB02.0,
+    vdiseases:JB02.3, vdiseases:JB02.4, vdiseases:JB02.Z, vdiseases:JB03, vdiseases:JB03.0,
+    vdiseases:JB03.1, vdiseases:JB03.Z, vdiseases:JB04, vdiseases:JB04.1, vdiseases:JB04.2,
+    vdiseases:JB04.3, vdiseases:JB04.4, vdiseases:JB04.5, vdiseases:JB04.Y, vdiseases:JB05.1,
+    vdiseases:JB05.2, vdiseases:JB05.4, vdiseases:JB06, vdiseases:JB06.0, vdiseases:JB06.2,
+    vdiseases:JB06.3, vdiseases:JB06.Z, vdiseases:JB0D.7, vdiseases:JB0D.8;
+  skos:prefLabel "Maternal conditions";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:JA82 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for known or suspected malpresentation of fetus" .
+
+vdiseases:JA82.1 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for breech presentation" .
+
+vdiseases:JA82.2 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for transverse or oblique lie" .
+
+vdiseases:JA82.3 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for face, brow or chin presentation" .
+
+vdiseases:JA82.6 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for compound presentation" .
+
+vdiseases:JA82.Z a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for known or suspected malpresentation of fetus, unspecified" .
+
+vdiseases:JA83 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for known or suspected disproportion" .
+
+vdiseases:JA83.5 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for disproportion due to unusually large fetus" .
+
+vdiseases:JA83.6 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for disproportion due to hydrocephalic fetus" .
+
+vdiseases:JA83.Z a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for known or suspected disproportion, unspecified" .
+
+vdiseases:JA84.3 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for cervical incompetence" .
+
+vdiseases:JA86 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for other known or suspected fetal problems" .
+
+vdiseases:JA86.0 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for red cell antibodies" .
+
+vdiseases:JA86.2 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for signs of fetal hypoxia" .
+
+vdiseases:JA86.3 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for intrauterine death" .
+
+vdiseases:JA86.4 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for fetal growth restriction" .
+
+vdiseases:JA86.6 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care for viable fetus in abdominal pregnancy" .
+
+vdiseases:JA87 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care related to polyhydramnios" .
+
+vdiseases:JA88.Y a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified disorders of amniotic fluid and membranes" .
+
+vdiseases:JA88.0 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Oligohydramnios" .
+
+vdiseases:JA89.3 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Preterm premature rupture of membranes" .
+
+vdiseases:JA8A a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care related to placental disorders" .
+
+vdiseases:JA8A.2 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Morbidly adherent placenta" .
+
+vdiseases:JA8B.0 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Placenta praevia specified as without haemorrhage" .
+
+vdiseases:JA8B.1 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Placenta praevia with haemorrhage" .
+
+vdiseases:JA8C a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care related to premature separation of placenta" .
+
+vdiseases:JA41.Z a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Antepartum haemorrhage, unspecified" .
+
+vdiseases:JA8D a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care related to false labour" .
+
+vdiseases:JA8D.0 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "False labour before 37 completed weeks of gestation" .
+
+vdiseases:JA8D.Z a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care related to false labour, unspecified" .
+
+vdiseases:JA8E a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Maternal care related to prolonged pregnancy" .
+
+vdiseases:JB00 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Preterm labour or delivery" .
+
+vdiseases:JB00.0 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Preterm labour without delivery" .
+
+vdiseases:JB00.1 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Preterm spontaneous labour with preterm delivery" .
+
+vdiseases:JB00.2 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Preterm labour with term delivery" .
+
+vdiseases:JB01 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Failed induction of labour" .
+
+vdiseases:JB01.0 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Failed medical induction of labour" .
+
+vdiseases:JB02 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Abnormalities of forces of labour" .
+
+vdiseases:JB02.0 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Primary uterine inertia" .
+
+vdiseases:JB02.3 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Precipitate labour" .
+
+vdiseases:JB02.4 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Hypertonic, incoordinate, or prolonged uterine contractions" .
+
+vdiseases:JB02.Z a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Abnormalities of forces of labour, unspecified" .
+
+vdiseases:JB03 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Long labour" .
+
+vdiseases:JB03.0 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Prolonged first stage of labour" .
+
+vdiseases:JB03.1 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Prolonged second stage of labour" .
+
+vdiseases:JB03.Z a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Long labour, unspecified" .
+
+vdiseases:JB04 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to malposition or malpresentation of fetus" .
+
+vdiseases:JB04.1 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to breech presentation" .
+
+vdiseases:JB04.2 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to face presentation" .
+
+vdiseases:JB04.3 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to brow presentation" .
+
+vdiseases:JB04.4 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to shoulder presentation" .
+
+vdiseases:JB04.5 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to compound presentation" .
+
+vdiseases:JB04.Y a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to other malposition and malpresentation of fetus" .
+
+vdiseases:JB05.1 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to generally contracted pelvis" .
+
+vdiseases:JB05.2 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to pelvic inlet contraction" .
+
+vdiseases:JB05.4 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to foetopelvic disproportion, unspecified" .
+
+vdiseases:JB06 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to other causes" .
+
+vdiseases:JB06.0 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to shoulder dystocia" .
+
+vdiseases:JB06.2 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to unusually large fetus" .
+
+vdiseases:JB06.3 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to other abnormalities of fetus" .
+
+vdiseases:JB0D.8 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Failed trial of labour, unspecified" .
+
+vdiseases:JB0D.7 a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Failed application of vacuum extractor or forceps, unspecified" .
+
+vdiseases:JB06.Z a skos:Concept;
+  skos:broader vdiseases:Maternalconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Obstructed labour due to unspecified causes" .
+
+vdiseases:RespiratorySystem a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:1B10.0, vdiseases:1B10.Z, vdiseases:1D65, <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases/1E+30>,
+    vdiseases:2C29.1, vdiseases:CA07, vdiseases:CA07.1, vdiseases:CA4Z, vdiseases:CB00,
+    vdiseases:CB41, vdiseases:CB7Z, vdiseases:KB20.Z, vdiseases:KB23, vdiseases:KB23.0,
+    vdiseases:KB23.Y, vdiseases:KB2D, vdiseases:LA7Y, vdiseases:MD10, vdiseases:MD11,
+    vdiseases:MD2Z, vdiseases:MD31, vdiseases:MD33, vdiseases:NE01;
+  skos:prefLabel "RespiratorySystem";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:CB7Z a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Diseases of the respiratory system, unspecified" .
+
+vdiseases:KB20.Z a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Intrauterine hypoxia, unspecified" .
+
+vdiseases:MD31 a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Pleurisy" .
+
+vdiseases:MD33 a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Respiratory arrest" .
+
+vdiseases:MD10 a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Abnormal sputum" .
+
+vdiseases:LA7Y a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified structural developmental anomalies of the respiratory system" .
+
+vdiseases:1B10.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases, vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Respiratory tuberculosis, confirmed" .
+
+vdiseases:1B10.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases, vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Respiratory tuberculosis, without mention of bacteriological or histological confirmation" .
+
+vdiseases:2C29.1 a skos:Concept;
+  skos:broader vdiseases:Neoplasms, vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified malignant neoplasms of other or ill-defined sites in the respiratory system or intrathoracic organs" .
+
+<http://vocab.vodan-totafrica.info/vodana-terms/vdiseases/1E+30> a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Influenza due to identified seasonal influenza virus" .
+
+vdiseases:CA07.1 a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Acute upper respiratory infections of multiple sites" .
+
+vdiseases:CA07 a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Acute upper respiratory infections of multiple and unspecified sites" .
+
+vdiseases:CA4Z a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Lung infections, unspecified" .
+
+vdiseases:CB00 a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Acute respiratory distress syndrome" .
+
+vdiseases:CB41 a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Respiratory failure" .
+
+vdiseases:KB23 a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Respiratory distress of newborn" .
+
+vdiseases:KB23.0 a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Respiratory distress syndrome of newborn" .
+
+vdiseases:KB23.Y a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified respiratory distress of newborn" .
+
+vdiseases:KB2D a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases, vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Respiratory failure of newborn" .
+
+vdiseases:MD2Z a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Haemorrhage from respiratory passages, unspecified" .
+
+vdiseases:MD11 a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Abnormalities of breathing" .
+
+vdiseases:NE01 a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Burn of respiratory tract" .
+
+vdiseases:1D65 a skos:Concept;
+  skos:broader vdiseases:RespiratorySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Severe acute respiratory syndrome" .
+
+vdiseases:CongenitalMalformations a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:EC20.00, vdiseases:GB8Y, vdiseases:LA6Y, vdiseases:LB02, vdiseases:LB12.2,
+    vdiseases:LB15.0, vdiseases:LB16.1, vdiseases:LB17.1, vdiseases:LB30.7, vdiseases:LB42.4,
+    vdiseases:LB4Z, vdiseases:LB52.Z, vdiseases:LB53, vdiseases:LB70.3, vdiseases:LB73.0,
+    vdiseases:LB78, vdiseases:LB98.00, vdiseases:LB98.01, vdiseases:LB98.02, vdiseases:LB99.Y,
+    vdiseases:LB9A, vdiseases:LD24.10, vdiseases:LD27.1, vdiseases:LD2D.1Z, vdiseases:LD2G,
+    vdiseases:LD40.0, vdiseases:LD40.1, vdiseases:LD40.2, vdiseases:LD50.0, vdiseases:LD50.3,
+    vdiseases:LD56.Z, vdiseases:LD9Z;
+  skos:prefLabel "Congenital Malformations";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:LB02 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations, vdiseases:Musculoskeletal;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Gastroschisis" .
+
+vdiseases:EC20.00 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations, vdiseases:Musculoskeletal;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Ichthyosis vulgaris" .
+
+vdiseases:LD27.1 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations, vdiseases:Musculoskeletal;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Xeroderma pigmentosum" .
+
+vdiseases:LD2D.1Z a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations, vdiseases:Musculoskeletal;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neurofibromatosis, unspecified" .
+
+vdiseases:LD2G a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations, vdiseases:Musculoskeletal;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Conjoined twins" .
+
+vdiseases:LD40.0 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations, vdiseases:Musculoskeletal, vdiseases:NeurologicalDisorders;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Complete trisomy 21" .
+
+vdiseases:LD40.2 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations, vdiseases:Musculoskeletal;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Complete trisomy 18" .
+
+vdiseases:LD40.1 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations, vdiseases:Musculoskeletal;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Complete trisomy 13" .
+
+vdiseases:LD50.0 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations, vdiseases:Musculoskeletal;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Turner syndrome" .
+
+vdiseases:LD50.3 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations, vdiseases:Musculoskeletal;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Klinefelter syndrome" .
+
+vdiseases:LD56.Z a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations, vdiseases:Musculoskeletal;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Chimaera 46, XX, 46, XY, unspecified" .
+
+vdiseases:LD9Z a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Developmental anomalies, unspecified" .
+
+vdiseases:LB12.2 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Oesophageal fistula without atresia" .
+
+vdiseases:LB15.0 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Meckel diverticulum" .
+
+vdiseases:LB16.1 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Hirschsprung disease" .
+
+vdiseases:LB17.1 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Ectopic anus" .
+
+vdiseases:LB4Z a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Structural developmental anomalies of the female genital system, unspecified" .
+
+vdiseases:LB42.4 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Imperforate hymen" .
+
+vdiseases:LB52.Z a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Cryptorchidism, unspecified" .
+
+vdiseases:LB53 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Hypospadias" .
+
+vdiseases:GB8Y a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified cystic or dysplastic kidney disease" .
+
+vdiseases:LB30.7 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Ectopic or pelvic kidney" .
+
+vdiseases:LB98.00 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Talipes equinovarus" .
+
+vdiseases:LB98.01 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Talipes calcaneovarus" .
+
+vdiseases:LB98.02 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Metatarsus varus" .
+
+vdiseases:LA6Y a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations, vdiseases:Musculoskeletal;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified structural developmental anomalies of the neck" .
+
+vdiseases:LB78 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Polydactyly" .
+
+vdiseases:LB99.Y a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified reduction defects of upper limb" .
+
+vdiseases:LB9A a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Reduction defects of lower limb" .
+
+vdiseases:LB70.3 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Macrocephaly" .
+
+vdiseases:LB73.0 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Occult spinal dysraphism" .
+
+vdiseases:LD24.10 a skos:Concept;
+  skos:broader vdiseases:CongenitalMalformations;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Osteopetrosis" .
+
+vdiseases:EndocrineandMetabolicDisorders a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:5A0Y, vdiseases:5A14, vdiseases:MA6Y;
+  skos:prefLabel "Endocrine and Metabolic Disorders";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:5A14 a skos:Concept;
+  skos:broader vdiseases:EndocrineandMetabolicDisorders;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Diabetes mellitus, type unspecified" .
+
+vdiseases:5A0Y a skos:Concept;
+  skos:broader vdiseases:EndocrineandMetabolicDisorders;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified disorders of the thyroid gland or thyroid hormones system" .
+
+vdiseases:MA6Y a skos:Concept;
+  skos:broader vdiseases:EndocrineandMetabolicDisorders;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified symptoms, signs or clinical findings of endocrine, nutritional or metabolic diseases" .
+
+vdiseases:Eyeconditions a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:1B12.1, <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases/1B12.1/9A96.2>,
+    vdiseases:1F00.10, vdiseases:9A03.1Z, vdiseases:9A03.21, vdiseases:9A03.22, vdiseases:9A03.23,
+    vdiseases:9A03.4, vdiseases:9A60, vdiseases:9A72, vdiseases:9A76, vdiseases:9A77,
+    vdiseases:9A77.1, vdiseases:9A78.0, vdiseases:9A78.4, vdiseases:9A78.Z, vdiseases:9B10.Z,
+    vdiseases:9B11.0, vdiseases:9B51, vdiseases:9B74.Z, vdiseases:9C60, vdiseases:9C61,
+    vdiseases:9C61.0, vdiseases:9C61.12, vdiseases:9C61.24;
+  skos:prefLabel "Eye conditions";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:9A03.4 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Lagophthalmos" .
+
+vdiseases:9A60 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Conjunctivitis" .
+
+vdiseases:9B51 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Scleritis" .
+
+vdiseases:1B12.1 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Tuberculosis of eye", "Tuberculous episcleritis" .
+
+vdiseases:9A72 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Traumatic keratitis" .
+
+vdiseases:9A76 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Corneal ulcer" .
+
+vdiseases:9A78.Z a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Certain specified disorders of cornea, unspecified" .
+
+vdiseases:9A78.0 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Corneal neovascularization" .
+
+vdiseases:9A77 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Corneal scars or opacities" .
+
+vdiseases:9A77.1 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Adherent leukoma" .
+
+vdiseases:9A78.4 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Corneal degeneration" .
+
+vdiseases:1F00.10 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Herpes simplex keratitis" .
+
+<http://vocab.vodan-totafrica.info/vodana-terms/vdiseases/1B12.1/9A96.2> a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Chronic tuberculous iridocyclitis" .
+
+vdiseases:9B10.Z a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Cataract, unspecified" .
+
+vdiseases:9B11.0 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Aphakia" .
+
+vdiseases:9B74.Z a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Retinal vascular occlusions, unspecified" .
+
+vdiseases:9C61 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Glaucoma" .
+
+vdiseases:9C60 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Glaucoma suspect" .
+
+vdiseases:9C61.0 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Primary open-angle glaucoma" .
+
+vdiseases:9C61.12 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Primary angle closure glaucoma" .
+
+vdiseases:9C61.24 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Glaucoma due to eye inflammation" .
+
+vdiseases:9A03.1Z a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Entropion of eyelid, unspecified" .
+
+vdiseases:9A03.21 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Mechanical ectropion of eyelid" .
+
+vdiseases:9A03.22 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Senile ectropion of eyelid" .
+
+vdiseases:9A03.23 a skos:Concept;
+  skos:broader vdiseases:Eyeconditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Spastic ectropion of eyelid" .
+
+vdiseases:NeurologicalDisorders a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:6D8Z, vdiseases:8A00.0, vdiseases:8A20, vdiseases:8B60.0,
+    vdiseases:8D2Z, vdiseases:LD40.0, vdiseases:MA80.0, vdiseases:MA80.2, vdiseases:MA80.Z,
+    vdiseases:MB20.1;
+  skos:prefLabel "Neurological Disorders";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:MA80.0 a skos:Concept;
+  skos:broader vdiseases:NeurologicalDisorders;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Aphasia" .
+
+vdiseases:MA80.2 a skos:Concept;
+  skos:broader vdiseases:NeurologicalDisorders;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Dysarthria" .
+
+vdiseases:8A00.0 a skos:Concept;
+  skos:broader vdiseases:NeurologicalDisorders;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Parkinson disease" .
+
+vdiseases:6D8Z a skos:Concept;
+  skos:broader vdiseases:NeurologicalDisorders;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Dementia, unknown or unspecified cause" .
+
+vdiseases:8B60.0 a skos:Concept;
+  skos:broader vdiseases:NeurologicalDisorders;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Amyotrophic lateral sclerosis" .
+
+vdiseases:MA80.Z a skos:Concept;
+  skos:broader vdiseases:NeurologicalDisorders, vdiseases:SpeechandLanguageTherapy;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Speech disturbances, unspecified" .
+
+vdiseases:MB20.1 a skos:Concept;
+  skos:broader vdiseases:NeurologicalDisorders;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Coma" .
+
+vdiseases:8A20 a skos:Concept;
+  skos:broader vdiseases:NeurologicalDisorders;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Alzheimer disease" .
+
+vdiseases:8D2Z a skos:Concept;
+  skos:broader vdiseases:NeurologicalDisorders;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Cerebral palsy, unspecified" .
+
+vdiseases:Neoplasms a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:2A60.3Z, vdiseases:2A80, vdiseases:2A80.Z, vdiseases:2A85.6,
+    vdiseases:2B0Y, vdiseases:2B30, vdiseases:2B30.Z, vdiseases:2B33, vdiseases:2B33.4,
+    vdiseases:2B33.5, vdiseases:2B57.Z, vdiseases:2B5J, vdiseases:2B66.Z, vdiseases:2B6A.Z,
+    vdiseases:2B70.Z, vdiseases:2B72, vdiseases:2B72.Z, vdiseases:2B80, vdiseases:2B80.0Z,
+    vdiseases:2B80.1Y, vdiseases:2B90, vdiseases:2B90.3, vdiseases:2C00, vdiseases:2C23.Z,
+    vdiseases:2C24, vdiseases:2C25, vdiseases:2C29.1, vdiseases:2C30, vdiseases:2C30.Z,
+    vdiseases:2C6Z, vdiseases:2C73, vdiseases:2C76.Z, vdiseases:2C77, vdiseases:2C77.Z,
+    vdiseases:2C7Y, vdiseases:2C80, vdiseases:2C80.Z, vdiseases:2C82, vdiseases:2C8Z,
+    vdiseases:2D42, vdiseases:2D4Z, vdiseases:2D6Z, vdiseases:2D71, vdiseases:2D80.0,
+    vdiseases:2D90, vdiseases:2E00, vdiseases:2E03, vdiseases:2E05.0, vdiseases:2E08,
+    vdiseases:2E2Z, vdiseases:2E80.Z, vdiseases:2E81.0Z, vdiseases:2F32, vdiseases:2F35,
+    vdiseases:QC40.7, vdiseases:XA5TA5;
+  skos:prefLabel "Neoplasms";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:2B66.Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms, vdiseases:NonCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of other or unspecified parts of mouth, unspecified" .
+
+vdiseases:2B6A.Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of oropharynx, unspecified" .
+
+vdiseases:2B70.Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of oesophagus, unspecified" .
+
+vdiseases:2B72 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of stomach" .
+
+vdiseases:2B72.Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of stomach, unspecified" .
+
+vdiseases:2B80 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of small intestine" .
+
+vdiseases:2B80.0Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of duodenum, unspecified" .
+
+vdiseases:2B80.1Y a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified malignant neoplasms of jejunum or ileum" .
+
+vdiseases:2B90 a skos:Concept;
+  skos:broader vdiseases:Neoplasms, vdiseases:NonCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of colon" .
+
+vdiseases:2B90.3 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasm of sigmoid colon" .
+
+vdiseases:2C00 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of anus or anal canal" .
+
+vdiseases:2C23.Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of larynx, unspecified" .
+
+vdiseases:2C24 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of trachea" .
+
+vdiseases:2C25 a skos:Concept;
+  skos:broader vdiseases:Neoplasms, vdiseases:NonCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of bronchus or lung" .
+
+vdiseases:2B5J a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant miscellaneous tumours of bone or articular cartilage of other or unspecified sites" .
+
+vdiseases:2C30.Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms, vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Melanoma of skin, unspecified" .
+
+vdiseases:2C30 a skos:Concept;
+  skos:broader vdiseases:Neoplasms, vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Melanoma of skin" .
+
+vdiseases:2B57.Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Kaposi sarcoma of unspecified primary site" .
+
+vdiseases:2C6Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms, vdiseases:NonCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of breast, unspecified" .
+
+vdiseases:2C77 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of cervix uteri" .
+
+vdiseases:2C77.Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms, vdiseases:NonCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of cervix uteri, unspecified" .
+
+vdiseases:2C76.Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of corpus uteri, unspecified" .
+
+vdiseases:2C73 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of ovary" .
+
+vdiseases:2C7Y a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified malignant neoplasms of female genital organs" .
+
+vdiseases:2C82 a skos:Concept;
+  skos:broader vdiseases:Neoplasms, vdiseases:NonCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of prostate" .
+
+vdiseases:2C80 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of testis" .
+
+vdiseases:2C80.Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of testis, unspecified" .
+
+vdiseases:2C8Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of male genital organs, unspecified" .
+
+vdiseases:2D42 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasms of ill-defined sites" .
+
+vdiseases:2D6Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Metastatic malignant neoplasm to unspecified lymph node" .
+
+vdiseases:2D71 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasm metastasis in mediastinum" .
+
+vdiseases:2D90 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasm metastasis in retroperitoneum" .
+
+vdiseases:2D80.0 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasm metastasis in liver" .
+
+vdiseases:2E00 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasm metastasis in kidney or renal pelvis" .
+
+vdiseases:2E08 a skos:Concept;
+  skos:broader vdiseases:Neoplasms, vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Metastatic malignant neoplasm involving skin" .
+
+vdiseases:2E03 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasm metastasis in bone or bone marrow" .
+
+vdiseases:2E05.0 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasm metastasis in ovary" .
+
+vdiseases:2E2Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasm metastasis, unspecified" .
+
+vdiseases:2B33 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant haematopoietic neoplasms without further specification" .
+
+vdiseases:2D4Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Unspecified malignant neoplasms of ill-defined or unspecified sites" .
+
+vdiseases:2B30 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Hodgkin lymphoma" .
+
+vdiseases:2B30.Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Hodgkin lymphoma, unspecified" .
+
+vdiseases:2A80 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Follicular lymphoma" .
+
+vdiseases:2A80.Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Follicular lymphoma, unspecified" .
+
+vdiseases:2A85.6 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Burkitt lymphoma including Burkitt leukaemia" .
+
+vdiseases:2B0Y a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified primary cutaneous mature T-cell or NK-cell lymphomas and lymphoproliferative disorders" .
+
+vdiseases:2B33.5 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant lymphoma, not elsewhere classified" .
+
+vdiseases:2A60.3Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Acute myeloid leukaemia, unspecified" .
+
+vdiseases:2B33.4 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Leukaemia, unspecified" .
+
+vdiseases:QC40.7 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Personal history of other malignant neoplasms of lymphoid, haematopoietic or related tissues" .
+
+vdiseases:2E80.Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Benign lipomatous neoplasm, unspecified" .
+
+vdiseases:2E81.0Z a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neoplastic haemangioma, unspecified" .
+
+vdiseases:2F32 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Benign neoplasm of ovary" .
+
+vdiseases:2F35 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Benign neoplasm of urinary organs [Kidney]" .
+
+vdiseases:XA5TA5 a skos:Concept;
+  skos:broader vdiseases:Neoplasms;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Benign neoplasm of urinary organs [Urethra]" .
+
+vdiseases:NonCommunicableDiseases a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:2B66.Z, vdiseases:2B90, vdiseases:2C12.0, vdiseases:2C25,
+    vdiseases:2C6Z, vdiseases:2C77.Z, vdiseases:2C82, vdiseases:3A51.1, vdiseases:DA08.0,
+    vdiseases:DA0B, vdiseases:DA0Z, vdiseases:DE2Z;
+  skos:prefLabel "Non Communicable Diseases";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:3A51.1 a skos:Concept;
+  skos:broader vdiseases:NonCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Sickle cell disease without crisis" .
+
+vdiseases:DE2Z a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases, vdiseases:NonCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Diseases of the digestive system, unspecified" .
+
+vdiseases:DA0Z a skos:Concept;
+  skos:broader vdiseases:NonCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "DA0Z Diseases or disorders of orofacial complex, unspecified" .
+
+vdiseases:DA08.0 a skos:Concept;
+  skos:broader vdiseases:NonCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Dental caries" .
+
+vdiseases:DA0B a skos:Concept;
+  skos:broader vdiseases:NonCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Gingival diseases" .
+
+vdiseases:2C12.0 a skos:Concept;
+  skos:broader vdiseases:NonCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malignant neoplasm of liver" .
+
+vdiseases:Injuries a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:KA40.0Z, vdiseases:KA45.0Y, vdiseases:NA0Z, vdiseases:NC3Z,
+    vdiseases:NC5Z, vdiseases:NC9Z, vdiseases:ND1Z, vdiseases:ND34, vdiseases:PD50, vdiseases:XJ69A;
+  skos:prefLabel "Injuries";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:NA0Z a skos:Concept;
+  skos:broader vdiseases:Injuries;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Injuries to the head, unspecified" .
+
+vdiseases:PD50 a skos:Concept;
+  skos:broader vdiseases:Injuries;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Assault by land transport road traffic injury event" .
+
+vdiseases:KA40.0Z a skos:Concept;
+  skos:broader vdiseases:Injuries;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Intracranial laceration or haemorrhage due to birth injury, unspecified" .
+
+vdiseases:KA45.0Y a skos:Concept;
+  skos:broader vdiseases:Injuries;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified fracture of skull due to birth injury" .
+
+vdiseases:NC3Z a skos:Concept;
+  skos:broader vdiseases:Injuries;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Injuries to the elbow or forearm, unspecified" .
+
+vdiseases:NC5Z a skos:Concept;
+  skos:broader vdiseases:Injuries;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Injuries to the wrist or hand, unspecified" .
+
+vdiseases:NC9Z a skos:Concept;
+  skos:broader vdiseases:Injuries;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Injuries to the knee or lower leg, unspecified" .
+
+vdiseases:ND1Z a skos:Concept;
+  skos:broader vdiseases:Injuries;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Injuries to the ankle or foot, unspecified" .
+
+vdiseases:ND34 a skos:Concept;
+  skos:broader vdiseases:Injuries;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Crushing injuries involving multiple body regions" .
+
+vdiseases:XJ69A a skos:Concept;
+  skos:broader vdiseases:Injuries;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Insect bite, nonvenomous" .
+
+vdiseases:Musculoskeletal a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:EC20.00, vdiseases:FC0Z, vdiseases:LA6Y, vdiseases:LB02, vdiseases:LD27.1,
+    vdiseases:LD2D.1Z, vdiseases:LD2G, vdiseases:LD40.0, vdiseases:LD40.1, vdiseases:LD40.2,
+    vdiseases:LD50.0, vdiseases:LD50.3, vdiseases:LD56.Z;
+  skos:prefLabel "Musculoskeletal";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:FC0Z a skos:Concept;
+  skos:broader vdiseases:Musculoskeletal;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Diseases of the musculoskeletal system or connective tissue, unspecified" .
+
+vdiseases:SpeechandLanguageTherapy a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:6A01, vdiseases:8B25.1, vdiseases:8B25.Y, vdiseases:MA80,
+    vdiseases:MA80.Z, vdiseases:MA81, vdiseases:MA82.Z, vdiseases:QB95.5;
+  skos:prefLabel "Speech and Language Therapy";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:QB95.5 a skos:Concept;
+  skos:broader vdiseases:SpeechandLanguageTherapy;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Speech therapy" .
+
+vdiseases:6A01 a skos:Concept;
+  skos:broader vdiseases:SpeechandLanguageTherapy;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Developmental speech or language disorders" .
+
+vdiseases:MA82.Z a skos:Concept;
+  skos:broader vdiseases:SpeechandLanguageTherapy;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Voice disturbances, unspecified" .
+
+vdiseases:MA81 a skos:Concept;
+  skos:broader vdiseases:SpeechandLanguageTherapy;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Speech dysfluency" .
+
+vdiseases:MA80 a skos:Concept;
+  skos:broader vdiseases:SpeechandLanguageTherapy;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Speech disturbances" .
+
+vdiseases:8B25.1 a skos:Concept;
+  skos:broader vdiseases:SpeechandLanguageTherapy;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Late effects of intracerebral haemorrhage" .
+
+vdiseases:8B25.Y a skos:Concept;
+  skos:broader vdiseases:SpeechandLanguageTherapy;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Late effects of other specified cerebrovascular disease" .
+
+vdiseases:InfectiousandParasiticorCommunicableDiseases a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:narrower vdiseases:1A00, vdiseases:1A02, vdiseases:1A03.3, vdiseases:1A05, vdiseases:1A06,
+    vdiseases:1A07.0, vdiseases:1A07.Y, vdiseases:1A07.Z, vdiseases:1A09.0, vdiseases:1A09.Y,
+    vdiseases:1A09.Z, vdiseases:1A0Z, vdiseases:1A10, vdiseases:1A11.Z, vdiseases:1A12,
+    vdiseases:1A1Y, vdiseases:1A1Z, vdiseases:1A23, vdiseases:1A2Z, vdiseases:1A31, vdiseases:1A32,
+    vdiseases:1A36.00, vdiseases:1A36.01, vdiseases:1A36.0Z, vdiseases:1A36.10, vdiseases:1A36.11,
+    vdiseases:1A36.1Y, vdiseases:1A36.Z, vdiseases:1A40.0, vdiseases:1A56, vdiseases:1A60.Z,
+    vdiseases:1A61.0, vdiseases:1A61.2, vdiseases:1A61.4, vdiseases:1A61.Z, vdiseases:1A62.Z,
+    vdiseases:1A6Z, vdiseases:1A7Z, vdiseases:1A80, vdiseases:1A81.0, vdiseases:1A92,
+    vdiseases:1A94.Z, vdiseases:1A95.1, vdiseases:1A9Y, vdiseases:1A9Z, vdiseases:1B10.0,
+    vdiseases:1B10.Z, vdiseases:1B11.2, vdiseases:1B11.Z, vdiseases:1B12, vdiseases:1B12.2,
+    vdiseases:1B12.40, vdiseases:1B12.5, vdiseases:1B12.7, vdiseases:1B12.8, vdiseases:1B13,
+    vdiseases:1B13.0, vdiseases:1B13.1, vdiseases:1B13.Z, vdiseases:1B20.0, vdiseases:1B20.1,
+    vdiseases:1B20.Z, vdiseases:1B52, vdiseases:1B70.0, vdiseases:1B94.Z, vdiseases:1B97,
+    vdiseases:1C15, vdiseases:1C17.1, vdiseases:1C17.Z, vdiseases:1C1A.0, vdiseases:1C1C.0,
+    vdiseases:1C1G.13, vdiseases:1C1J, vdiseases:1C1J.1, vdiseases:1C20, vdiseases:1C23,
+    vdiseases:1C23.0, vdiseases:1C23.1, vdiseases:1C23.Z, vdiseases:1C30, vdiseases:1C30.0,
+    vdiseases:1C30.Z, vdiseases:1C41, vdiseases:1C43, vdiseases:1C4Y, vdiseases:1C62.0,
+    vdiseases:1C62.2, vdiseases:1C62.3, vdiseases:1C81, vdiseases:1C82, vdiseases:1D21,
+    vdiseases:1D2Z, vdiseases:1B54, vdiseases:1B5Y, vdiseases:1D01.0Y, vdiseases:1D01.00,
+    vdiseases:1D47, vdiseases:1D48;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:1D60.0Z, vdiseases:1D60.Z, vdiseases:1D80, vdiseases:1D92,
+    vdiseases:1E50.1, vdiseases:1E50.Y, vdiseases:1E50.Z, vdiseases:1E51, vdiseases:1E51.1,
+    vdiseases:1E70, vdiseases:1E76, vdiseases:1E80, vdiseases:1E90, vdiseases:1E90.0,
+    vdiseases:1E90.Y, vdiseases:1E91, vdiseases:1E91.0, vdiseases:1E91.2, vdiseases:1E91.Y,
+    vdiseases:1F00, vdiseases:1F00.03, vdiseases:1F00.Z, vdiseases:1F02, vdiseases:1F03,
+    vdiseases:1F03.0, vdiseases:1F03.Y, vdiseases:1F0Y, vdiseases:1F20.Z, vdiseases:1F23.0,
+    vdiseases:1F23.13, vdiseases:1F23.30, vdiseases:1F23.31, vdiseases:1F23.Z, vdiseases:1F25.Z,
+    vdiseases:1F28.1, vdiseases:1F28.2, vdiseases:1F28.3, vdiseases:1F28.Y, vdiseases:1F28.Z,
+    vdiseases:1F2A.Z, vdiseases:1F2D.0, vdiseases:1F2Z, vdiseases:1F40, vdiseases:1F40.0,
+    vdiseases:1F40.Y, vdiseases:1F40.Z, vdiseases:1F41, vdiseases:1F41.Y, vdiseases:1F41.Z,
+    vdiseases:1F42, vdiseases:1F43, vdiseases:1F44, vdiseases:1F45, vdiseases:1F4Z, vdiseases:1F54,
+    vdiseases:1F54.0, vdiseases:1F54.1, vdiseases:1F54.2, vdiseases:1F57.1, vdiseases:1F57.Y,
+    vdiseases:1F57.Z, vdiseases:1F5Z, vdiseases:1F62, vdiseases:1F64, vdiseases:1F65,
+    vdiseases:1F66.Z, vdiseases:1F6A, vdiseases:1F6B, vdiseases:1F6G, vdiseases:1F70.Z,
+    vdiseases:1F73, vdiseases:1F76.1, vdiseases:1F76.Z, vdiseases:1F7Y, vdiseases:1F86.0,
+    vdiseases:1F86.1, vdiseases:1F86.Z, vdiseases:1F90.0, vdiseases:1F90.2, vdiseases:1F9Z,
+    vdiseases:1G00.Z, vdiseases:1G01.0, vdiseases:1G01.Z, vdiseases:1G03, vdiseases:1G04,
+    vdiseases:1G05, vdiseases:1G40, vdiseases:1G80, vdiseases:1G81, vdiseases:1G82, vdiseases:1G83,
+    vdiseases:1G8Y, vdiseases:BD93.13, vdiseases:D60.Z, vdiseases:DA0C.31, vdiseases:DB90.Y,
+    vdiseases:EA8Z, vdiseases:MC85, vdiseases:XN3NM;
+  skos:prefLabel "Infectious and Parasitic or Communicable Diseases";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:1F40 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malaria due to Plasmodium falciparum" .
+
+vdiseases:1F41 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malaria due to Plasmodium vivax" .
+
+vdiseases:1F42 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malaria due to Plasmodium malariae" .
+
+vdiseases:1F43 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malaria due to Plasmodium ovale" .
+
+vdiseases:1F44 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other parasitologically confirmed malaria" .
+
+vdiseases:1F45 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malaria without parasitological confirmation" .
+
+vdiseases:1A07.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Typhoid peritonitis" .
+
+vdiseases:1A07.Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified typhoid fever" .
+
+vdiseases:1A07.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Typhoid fever, unspecified" .
+
+vdiseases:1A00 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Cholera" .
+
+vdiseases:1A56 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Dysentery disorder" .
+
+vdiseases:1A09.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Salmonella enteritis" .
+
+vdiseases:1A09.Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Infections due to other Salmonella" .
+
+vdiseases:1G40 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Sepsis due to Salmonella without mention of septic shock", "Sepsis without septic shock" .
+
+vdiseases:1A09.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Salmonella infection, unspecified" .
+
+vdiseases:1A02 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Intestinal infections due to Shigella" .
+
+vdiseases:1A03.3 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Enterohaemorrhagic Escherichia coli infection*" .
+
+vdiseases:1A06 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Gastroenteritis due to Campylobacter" .
+
+vdiseases:1A05 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Intestinal infections due to Yersinia enterocolitica" .
+
+vdiseases:1A0Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Bacterial intestinal infections, unspecified" .
+
+vdiseases:1A10 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Foodborne staphylococcal intoxication" .
+
+vdiseases:1A11.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Botulism, unspecified" .
+
+vdiseases:1A12 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Foodborne Clostridium perfringens intoxication" .
+
+vdiseases:1A1Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified bacterial foodborne intoxications" .
+
+vdiseases:1A1Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Bacterial foodborne intoxications, unspecified" .
+
+vdiseases:1A36.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Amoebiasis, unspecified" .
+
+vdiseases:1A36.00 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Acute amoebiasis" .
+
+vdiseases:1A36.0Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Intestinal infections due to Entamoeba, unspecified (Matching Terms : Amoebic nondysenteric colitis)" .
+
+vdiseases:1A36.01 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Amoeboma of intestine" .
+
+vdiseases:1A36.10 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Amoebic liver abscess" .
+
+vdiseases:1A36.11 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Amoebic lung abscess" .
+
+vdiseases:1A36.1Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Amoebiasis of other specified sites", "Amoebic brain abscess" .
+
+vdiseases:1A31 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Giardiasis" .
+
+vdiseases:1A32 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Cryptosporidiosis" .
+
+vdiseases:1A23 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Enteritis due to Norovirus" .
+
+vdiseases:1A2Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Viral intestinal infections, unspecified" .
+
+vdiseases:1A40.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Gastroenteritis or colitis without specification of origin" .
+
+vdiseases:1B11.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Tuberculosis of the nervous system, unspecified" .
+
+vdiseases:1B11.2 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Meningeal tuberculoma" .
+
+vdiseases:1B12 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Tuberculosis of other systems and organs" .
+
+vdiseases:1B12.40 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Tuberculosis of bones or joints" .
+
+vdiseases:1B12.5 a skos:Concept;
+  skos:broader vdiseases:GenitourinarySystem, vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Tuberculosis of the genitourinary system" .
+
+vdiseases:1B12.7 a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases, vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Tuberculosis of the digestive system" .
+
+vdiseases:1B12.8 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases, vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Cutaneous tuberculosis" .
+
+vdiseases:1B12.2 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Tuberculosis of ear" .
+
+vdiseases:1B13 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Miliary tuberculosis" .
+
+vdiseases:1B13.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Acute miliary tuberculosis of a single specified site" .
+
+vdiseases:1B13.1 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Acute miliary tuberculosis of multiple sites" .
+
+vdiseases:1B13.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Miliary tuberculosis, unspecified" .
+
+vdiseases:1B94.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Tularaemia, unspecified" .
+
+vdiseases:1B97 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Anthrax" .
+
+vdiseases:1B20.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Paucibacillary leprosy" .
+
+vdiseases:1B20.1 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Multibacillary leprosy" .
+
+vdiseases:1B20.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Leprosy, unspecified" .
+
+vdiseases:1C1A.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Cutaneous listeriosis" .
+
+vdiseases:1C15 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Tetanus neonatorum" .
+
+vdiseases:1C17.1 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Nasal diphtheria" .
+
+vdiseases:1C17.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Diphtheria, unspecified" .
+
+vdiseases:1C1C.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Meningococcal meningitis" .
+
+vdiseases:XN3NM a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Sepsis without septic shock-Infectious agent:Streptococcus" .
+
+vdiseases:1B70.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Erysipelas" .
+
+vdiseases:1C41 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Bacterial infection of unspecified site" .
+
+vdiseases:MC85 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Gangrene" .
+
+vdiseases:1B52 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Toxic shock syndrome" .
+
+vdiseases:1A60.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Congenital syphilis, unspecified" .
+
+vdiseases:1A61.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Early syphilis, unspecified" .
+
+vdiseases:1A61.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Primary genital syphilis" .
+
+vdiseases:1A61.2 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Primary syphilis of other sites" .
+
+vdiseases:1A61.4 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Secondary syphilis of other sites" .
+
+vdiseases:1A62.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Late syphilis, unspecified" .
+
+vdiseases:1A6Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Syphilis, unspecified" .
+
+vdiseases:1A7Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Gonococcal infection, unspecified" .
+
+vdiseases:1A80 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Chlamydial lymphogranuloma" .
+
+vdiseases:1A81.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Chlamydial infection of lower genitourinary tract" .
+
+vdiseases:1A92 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Trichomoniasis" .
+
+vdiseases:1A94.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Anogenital herpes simplex infection without further specification" .
+
+vdiseases:1F00.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases, vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Herpes simplex infections, unspecified" .
+
+vdiseases:1A95.1 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Genital warts" .
+
+vdiseases:1A9Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified predominantly sexually transmitted infections" .
+
+vdiseases:1A9Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Predominantly sexually transmitted infections, unspecified" .
+
+vdiseases:1C1J a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Relapsing fever" .
+
+vdiseases:1C1J.1 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Louse-borne relapsing fever" .
+
+vdiseases:1C4Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified bacterial diseases" .
+
+vdiseases:DA0C.31 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Noma" .
+
+vdiseases:1C1G.13 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Lyme arthritis" .
+
+vdiseases:1C23 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Trachoma" .
+
+vdiseases:1C23.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Initial stage of trachoma" .
+
+vdiseases:1C23.1 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Active stage of trachoma" .
+
+vdiseases:1C23.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Trachoma, unspecified" .
+
+vdiseases:1C20 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Chlamydial conjunctivitis" .
+
+vdiseases:1C30 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Typhus fever" .
+
+vdiseases:1C30.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Epidemic louse-borne typhus fever due to Rickettsia prowazekii" .
+
+vdiseases:1C30.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Typhus fever, unspecified" .
+
+vdiseases:1C81 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Acute poliomyelitis" .
+
+vdiseases:1C82 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Rabies" .
+
+vdiseases:1D2Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Dengue fever, unspecified" .
+
+vdiseases:1D21 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Dengue with warning signs" .
+
+vdiseases:1D47 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Yellow fever" .
+
+vdiseases:1D60.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Filovirus disease, virus unspecified" .
+
+vdiseases:1D48 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Zika virus disease" .
+
+vdiseases:1D60.0Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Ebola disease, virus unspecified" .
+
+vdiseases:D60.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Filovirus disease, virus unspecified" .
+
+vdiseases:1F00 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Herpes simplex infections" .
+
+vdiseases:1F00.03 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases, vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Disseminated cutaneous herpes simplex infection complicating other skin diseases" .
+
+vdiseases:1E90 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Varicella" .
+
+vdiseases:1E90.Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Varicella with other specified complication" .
+
+vdiseases:1E90.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Varicella without complication" .
+
+vdiseases:1E91 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Zoster" .
+
+vdiseases:1E91.2 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Disseminated zoster" .
+
+vdiseases:1E91.Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Zoster with other specified complications" .
+
+vdiseases:1E91.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Zoster without complications" .
+
+vdiseases:1E70 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Smallpox" .
+
+vdiseases:1F03 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Measles" .
+
+vdiseases:1F03.Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Measles with other complications" .
+
+vdiseases:1F03.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Measles without complication" .
+
+vdiseases:1F02 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Rubella" .
+
+vdiseases:1E80 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Common warts" .
+
+vdiseases:1F0Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases, vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified viral infections characterised by skin or mucous membrane lesions" .
+
+vdiseases:1E76 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Molluscum contagiosum" .
+
+vdiseases:1E50.1 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Acute hepatitis B" .
+
+vdiseases:1E50.Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified acute viral hepatitis" .
+
+vdiseases:1E50.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Acute viral hepatitis, unspecified" .
+
+vdiseases:1E51 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Chronic viral hepatitis" .
+
+vdiseases:1E51.1 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Chronic hepatitis C" .
+
+vdiseases:1C62.2 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "HIV disease clinical stage 3 without mention of tuberculosis or malaria" .
+
+vdiseases:1C62.3 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "HIV disease clinical stage 4 without mention of tuberculosis or malaria" .
+
+vdiseases:1C62.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "HIV disease clinical stage 1 without mention of tuberculosis or malaria" .
+
+vdiseases:1D80 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Mumps" .
+
+vdiseases:1F28.Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified dermatophytosis" .
+
+vdiseases:1F28.1 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Dermatophytosis of nail" .
+
+vdiseases:1F28.2 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Dermatophytosis of foot" .
+
+vdiseases:1F28.3 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Genitocrural dermatophytosis" .
+
+vdiseases:1F28.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Dermatophytosis, unspecified" .
+
+vdiseases:1F2D.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Pityriasis versicolor" .
+
+vdiseases:1F23.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Candidosis, unspecified" .
+
+vdiseases:1F23.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Candidosis of lips or oral mucous membranes" .
+
+vdiseases:1F23.31 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Pulmonary candidosis" .
+
+vdiseases:1F23.13 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Candidosis of nail or paronychium" .
+
+vdiseases:EA8Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Dermatitis or eczema, unspecified" .
+
+vdiseases:1F23.30 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Candida meningitis" .
+
+vdiseases:1F25.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Coccidioidomycosis, unspecified" .
+
+vdiseases:1F2A.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Histoplasmosis, unspecified" .
+
+vdiseases:1F20.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Aspergillosis, unspecified" .
+
+vdiseases:1C43 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Actinomycetoma" .
+
+vdiseases:1F2Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Mycoses, unspecified" .
+
+vdiseases:1F40.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malaria due to Plasmodium falciparum, unspecified" .
+
+vdiseases:1F40.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Plasmodium falciparum malaria with cerebral complications" .
+
+vdiseases:1F40.Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other severe and complicated Plasmodium falciparum malaria" .
+
+vdiseases:1F41.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Plasmodium vivax malaria without complication" .
+
+vdiseases:1F41.Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malaria due to Plasmodium vivax with other complications" .
+
+vdiseases:1F4Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Malaria, unspecified" .
+
+vdiseases:1F54 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Leishmaniasis" .
+
+vdiseases:1F54.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Visceral leishmaniasis" .
+
+vdiseases:1F54.1 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Cutaneous leishmaniasis" .
+
+vdiseases:1F54.2 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Mucocutaneous leishmaniasis" .
+
+vdiseases:1F57.1 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Meningoencephalitis due to Toxoplasma gondii" .
+
+vdiseases:1F57.Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified toxoplasmosis" .
+
+vdiseases:1F57.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Toxoplasmosis, unspecified" .
+
+vdiseases:1F5Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Unspecified protozoal disease" .
+
+vdiseases:1F86.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Schistosomiasis due to Schistosoma haematobium" .
+
+vdiseases:1F86.1 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Schistosomiasis due to Schistosoma mansoni" .
+
+vdiseases:1F86.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Schistosomiasis due to unspecified or unknown Schistosoma species" .
+
+vdiseases:1F73 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Echinococcosis" .
+
+vdiseases:1F76.1 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Taeniasis due to Taenia saginata" .
+
+vdiseases:1F76.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Taeniasis, unspecified" .
+
+vdiseases:1F70.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Cysticercosis, unspecified" .
+
+vdiseases:1F7Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified diseases due to cestodes" .
+
+vdiseases:1F64 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Dracunculiasis" .
+
+vdiseases:1F6A a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Onchocerciasis" .
+
+vdiseases:1F66.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Filariasis, unspecified" .
+
+vdiseases:BD93.13 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Lymphoedema due to lymphatic filariasis [Filariasis due to Wuchereria bancrofti]" .
+
+vdiseases:1F62 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Ascariasis" .
+
+vdiseases:1F6B a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Strongyloidiasis" .
+
+vdiseases:1F6G a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Trichuriasis" .
+
+vdiseases:1F65 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Enterobiasis" .
+
+vdiseases:1F90.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Mixed intestinal helminthiases" .
+
+vdiseases:1F90.2 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Intestinal helminthiasis, unspecified" .
+
+vdiseases:1G00.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Pediculosis of unspecified site or type" .
+
+vdiseases:1G03 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Pthiriasis" .
+
+vdiseases:1G04 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Scabies" .
+
+vdiseases:1G01.Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Myiasis, unspecified" .
+
+vdiseases:1G01.0 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Ocular myiasis" .
+
+vdiseases:1G05 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Tungiasis" .
+
+vdiseases:1F9Z a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Helminthiases, unspecified" .
+
+vdiseases:1G80 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Sequelae of tuberculosis" .
+
+vdiseases:1G83 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Sequelae of poliomyelitis" .
+
+vdiseases:1G82 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Sequelae of leprosy" .
+
+vdiseases:1G8Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Sequelae of other specified infectious diseases" .
+
+vdiseases:1G81 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Sequelae of trachoma" .
+
+vdiseases:1B54 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Meningitis due to Staphylococcus" .
+
+vdiseases:1B5Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified staphylococcal or streptococcal diseases" .
+
+vdiseases:1D01.0Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified bacterial meningitis" .
+
+vdiseases:1D01.00 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Meningitis due to Haemophilus influenzae" .
+
+vdiseases:1D92 a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Coronavirus infection, unspecified site" .
+
+vdiseases:DB90.Y a skos:Concept;
+  skos:broader vdiseases:InfectiousandParasiticorCommunicableDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified infectious liver disease" .
+
+vdiseases:EarNoseandThroatConditions a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:AA3Z, vdiseases:AA8Z, vdiseases:AB11.0, vdiseases:AB52, vdiseases:CA09.0,
+    vdiseases:CA0A, vdiseases:CA0F.0, vdiseases:CA0F.1, vdiseases:MB48.0, vdiseases:MC41,
+    vdiseases:MD20, vdiseases:ND71, vdiseases:ND72.1, vdiseases:ND73.Z, vdiseases:SC93,
+    vdiseases:XA68N3;
+  skos:prefLabel "Ear Nose and Throat Conditions";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:AA8Z a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Nonsuppurative otitis media, unspecified" .
+
+vdiseases:XA68N3 a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Mastoid" .
+
+vdiseases:AB52 a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Deafness not otherwise specified" .
+
+vdiseases:CA09.0 a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Chronic rhinitis" .
+
+vdiseases:CA0A a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Chronic rhinosinusitis" .
+
+vdiseases:MD20 a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Epistaxis" .
+
+vdiseases:CA0F.1 a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Hypertrophy of adenoids" .
+
+vdiseases:ND72.1 a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Foreign body in nostril" .
+
+vdiseases:ND71 a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Foreign body in ear" .
+
+vdiseases:ND73.Z a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Foreign body in alimentary tract, unspecified" .
+
+vdiseases:AA3Z a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Otitis externa, unspecified" .
+
+vdiseases:AB11.0 a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Acute mastoiditis" .
+
+vdiseases:MB48.0 a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Vertigo" .
+
+vdiseases:SC93 a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Tonsillitis disorder (TM1)" .
+
+vdiseases:CA0F.0 a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "CA0F.0 Hypertrophy of tonsils" .
+
+vdiseases:MC41 a skos:Concept;
+  skos:broader vdiseases:EarNoseandThroatConditions;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Tinnitus" .
+
+vdiseases:NeonatalDiseases a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:EH1Z, vdiseases:FA0Z, vdiseases:KA63.2, vdiseases:KA65.0,
+    vdiseases:KA65.2, vdiseases:KA65.4, vdiseases:KA86, vdiseases:KA87.Y, vdiseases:KA87.Z,
+    vdiseases:KB03, vdiseases:KB06, vdiseases:KB24, vdiseases:KB26, vdiseases:KB26.0,
+    vdiseases:KB26.1, vdiseases:KB26.3, vdiseases:KB26.Y, vdiseases:KB26.Z, vdiseases:KB2D,
+    vdiseases:KB45, vdiseases:KB60.2, vdiseases:KB60.41, vdiseases:KB60.4Y, vdiseases:KD12.0;
+  skos:prefLabel "Neonatal Diseases";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:KB26 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal aspiration syndromes" .
+
+vdiseases:KB26.0 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal aspiration of meconium" .
+
+vdiseases:KB26.1 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal aspiration of amniotic fluid or mucus" .
+
+vdiseases:KB26.3 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal aspiration of milk or regurgitated food" .
+
+vdiseases:KB26.Z a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal aspiration syndromes, unspecified" .
+
+vdiseases:KB45 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal hypertension" .
+
+vdiseases:KA63.2 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal candidosis" .
+
+vdiseases:FA0Z a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Osteoarthritis, unspecified" .
+
+vdiseases:KA65.0 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal conjunctivitis or dacryocystitis" .
+
+vdiseases:KA65.2 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal urinary tract infection" .
+
+vdiseases:EH1Z a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal skin infection, unspecified" .
+
+vdiseases:KA86 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal kernicterus" .
+
+vdiseases:KA87.Z a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal hyperbilirubinaemia, unspecified" .
+
+vdiseases:KA87.Y a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified neonatal hyperbilirubinaemia" .
+
+vdiseases:KB60.2 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal diabetes mellitus" .
+
+vdiseases:KB60.41 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Transitory iatrogenic neonatal hypoglycaemia" .
+
+vdiseases:KB60.4Y a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified neonatal hypoglycaemia" .
+
+vdiseases:KD12.0 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal cold injury syndrome" .
+
+vdiseases:KB06 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal seizures" .
+
+vdiseases:KB03 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal encephalopathy" .
+
+vdiseases:KB24 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Congenital pneumonia" .
+
+vdiseases:KB26.Y a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified neonatal aspiration syndromes" .
+
+vdiseases:KA65.4 a skos:Concept;
+  skos:broader vdiseases:NeonatalDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Neonatal meningitis" .
+
+vdiseases:DigestiveSystemorOralDiseases a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:1B12.7, vdiseases:DA01, vdiseases:DA01.11, vdiseases:DA01.30,
+    vdiseases:DA01.3Y, vdiseases:DE2Z, vdiseases:MD82, vdiseases:MD94, vdiseases:ME02,
+    vdiseases:ME03, vdiseases:ME05, vdiseases:ME0A, vdiseases:ME0Y, vdiseases:ME24.9Z,
+    vdiseases:ME24.A4, vdiseases:ME24.A5;
+  skos:prefLabel "Digestive System or Oral Diseases";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:DA01 a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Disorders of oral mucosa" .
+
+vdiseases:DA01.30 a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Cellulitis or abscess of soft tissues of the mouth" .
+
+vdiseases:DA01.11 a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Oral mucositis" .
+
+vdiseases:DA01.3Y a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified infections of lips or oral mucosa" .
+
+vdiseases:ME24.A5 a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Haematemesis" .
+
+vdiseases:ME24.A4 a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Melaena" .
+
+vdiseases:ME24.9Z a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Gastrointestinal bleeding, unspecified" .
+
+vdiseases:MD82 a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Intra-abdominal or pelvic swelling, mass or lump" .
+
+vdiseases:ME03 a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Abnormal bowel sounds" .
+
+vdiseases:ME0A a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Visible peristalsis" .
+
+vdiseases:ME02 a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Abdominal rigidity" .
+
+vdiseases:ME05 a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Change in bowel habit" .
+
+vdiseases:ME0Y a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified symptoms related to the lower gastrointestinal tract or abdomen" .
+
+vdiseases:MD94 a skos:Concept;
+  skos:broader vdiseases:DigestiveSystemorOralDiseases;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Halitosis" .
+
+vdiseases:SkinandSubcutaneous a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:1B12.8, vdiseases:1B75, vdiseases:1B7Y, vdiseases:1F00.03,
+    vdiseases:1F00.Z, vdiseases:1F0Y, vdiseases:2C30, vdiseases:2C30.Z, vdiseases:2E08,
+    vdiseases:EA50.2, vdiseases:EK70.Z, vdiseases:MB40.3, vdiseases:ME61, vdiseases:ME65,
+    vdiseases:ME66.1, vdiseases:ME66.Y, vdiseases:PA83.2;
+  skos:prefLabel "Skin and Subcutaneous";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:EA50.2 a skos:Concept;
+  skos:broader vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Staphylococcal scalded skin syndrome" .
+
+vdiseases:1B75 a skos:Concept;
+  skos:broader vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Deep bacterial folliculitis or pyogenic abscess of the skin" .
+
+vdiseases:1B7Y a skos:Concept;
+  skos:broader vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified pyogenic bacterial infection of skin and subcutaneous tissue" .
+
+vdiseases:EK70.Z a skos:Concept;
+  skos:broader vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Cutaneous cysts, unspecified" .
+
+vdiseases:ME65 a skos:Concept;
+  skos:broader vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Disturbances of skin sensation of unspecified aetiology" .
+
+vdiseases:MB40.3 a skos:Concept;
+  skos:broader vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Anaesthesia of skin" .
+
+vdiseases:ME61 a skos:Concept;
+  skos:broader vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Subcutaneous swelling, mass or lump of uncertain or unspecified nature" .
+
+vdiseases:ME66.Y a skos:Concept;
+  skos:broader vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified skin changes" .
+
+vdiseases:ME66.1 a skos:Concept;
+  skos:broader vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Changes in skin texture" .
+
+vdiseases:PA83.2 a skos:Concept;
+  skos:broader vdiseases:SkinandSubcutaneous;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Unintentionally cut or pierced by other or unspecified sharp object" .
+
+vdiseases:GenitourinarySystem a skos:Concept;
+  skos:definition "This is a parent disease category"@en;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:narrower vdiseases:1B12.5, vdiseases:FA11.2, vdiseases:GC04.Y, vdiseases:GC8Z,
+    vdiseases:JA62.0, vdiseases:JA62.Y, vdiseases:JA62.Z;
+  skos:prefLabel "Genitourinary System";
+  skos:topConceptOf <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases> .
+
+vdiseases:GC8Z a skos:Concept;
+  skos:broader vdiseases:GenitourinarySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Diseases of the genitourinary system, unspecified" .
+
+vdiseases:FA11.2 a skos:Concept;
+  skos:broader vdiseases:GenitourinarySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Arthropathy following genitourinary infection" .
+
+vdiseases:GC04.Y a skos:Concept;
+  skos:broader vdiseases:GenitourinarySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Other specified fistula of the genitourinary tract" .
+
+vdiseases:JA62.Z a skos:Concept;
+  skos:broader vdiseases:GenitourinarySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Infection of genitourinary tract in pregnancy, site unspecified" .
+
+vdiseases:JA62.0 a skos:Concept;
+  skos:broader vdiseases:GenitourinarySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Infections of kidney in pregnancy" .
+
+vdiseases:JA62.Y a skos:Concept;
+  skos:broader vdiseases:GenitourinarySystem;
+  skos:inScheme <http://vocab.vodan-totafrica.info/vodana-terms/vdiseases>;
+  skos:prefLabel "Infections of genitourinary tract in pregnancy, other specified site" .
